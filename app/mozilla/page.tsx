@@ -39,7 +39,7 @@ export default function GLoutlook() {
             </h1>
 
             <div
-                className={`w-auto h-[400px] max-sm:w-[350px] max-sm:h-[400px] flex justify-self-center items-center transition-all duration-300 ${
+                className={`w-auto h-[300px] max-sm:w-[350px] max-sm:h-[400px] flex justify-self-center items-center transition-all duration-300 ${
                     show
                         ? 'opacity-100 translate-y-0'
                         : 'opacity-0 translate-y-4'

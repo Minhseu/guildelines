@@ -46,7 +46,7 @@ const Icons = () => {
             <button
                 className="flex flex-col justify-center items-center gap-1"
                 type="button"
-                onClick={() => router.push('/outlook')}
+                onClick={() => router.push('/mozilla')}
             >
                 <label htmlFor="ms-outlook" className="text-lg underline">
                     Mozilla Thunderbird
