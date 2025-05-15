@@ -22,8 +22,16 @@ export default function GLoutlook() {
     const cards: CardData[] = mozillaCards;
 
     useEffect(() => {
+        // Show intro animation
         setTimeout(() => setShow(true), 10);
+
+        // Preload all images into browser cache
+        steps.forEach(image => {
+            const img = new Image();
+            img.src = image.src;
+        });
     }, []);
+
 
 
     const handleNext = () => {
