@@ -29,15 +29,15 @@ const Icons = () => {
             <button
                 className="flex flex-col justify-center items-center gap-1"
                 type="button"
-                onClick={() => router.push('/outlook')}
+                onClick={() => router.push('/google-mail')}
             >
-                <label htmlFor="ms-outlook" className="text-lg underline ">
+                <label htmlFor="mail" className="text-lg underline ">
                     Google Mail
                 </label>
                 <Image
                     src={googleMail}
                     width={300}
-                    id="ms-outlook"
+                    id="mail"
                     height={300}
                     alt="microsoft outlook icon"
                     className="icons w-56 h-56 max-sm:w-24 max-sm:h-24 border-2 border-white rounded-full p-5 duration-200 hover:bg-white hover:scale-110 hover:shadow-blue-500 hover:shadow-2xl"
@@ -48,13 +48,13 @@ const Icons = () => {
                 type="button"
                 onClick={() => router.push('/mozilla')}
             >
-                <label htmlFor="ms-outlook" className="text-lg underline">
+                <label htmlFor="mozilla" className="text-lg underline">
                     Mozilla Thunderbird
                 </label>
                 <Image
                     src={mozilla}
                     width={300}
-                    id="ms-outlook"
+                    id="mozilla"
                     height={300}
                     alt="microsoft outlook icon"
                     className="icons w-56 h-56 max-sm:w-24 max-sm:h-24 border-2 border-white rounded-full p-5 duration-200 hover:bg-white hover:scale-110 hover:shadow-blue-500 hover:shadow-2xl"
