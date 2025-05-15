@@ -19,15 +19,20 @@
     }
 }
 @keyframes fadeInOut {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .fade-in-out {
-  animation: fadeInOut 4s ease-in-out;
+    animation: fadeInOut 4s ease-in-out;
 }
-
 
 body {
     background: var(--background);
@@ -47,6 +52,11 @@ footer {
     font-family: monospace;
 }
 .icons {
+    background: var(--foreground) !important;
+    color: var(--background) !important;
+    font-family: monospace;
+}
+.mobile-nav {
     background: var(--foreground) !important;
     color: var(--background) !important;
     font-family: monospace;

@@ -2,13 +2,13 @@
 
 import React, { useEffect, useState } from 'react';
 import Card from '../components/ui/card';
-import { googlemailCards, CardData } from '@/public/data/allData'; 
+import { mozillaCards, CardData } from '@/public/data/allData';
 
 export default function GLoutlook() {
     const [show, setShow] = useState(false);
     const [currentStep, setCurrentStep] = useState(0);
 
-    const cards: CardData[] = googlemailCards;
+    const cards: CardData[] = mozillaCards;
 
     useEffect(() => {
         setTimeout(() => setShow(true), 10);
@@ -35,7 +35,7 @@ export default function GLoutlook() {
                         : 'opacity-0 translate-y-4'
                 }`}
             >
-                Microsoft Outlook Guideline
+                Mozilla Thunderbird Guideline
             </h1>
 
             <div

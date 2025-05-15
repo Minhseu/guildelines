@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Card from '../components/ui/card';
-import { googlemailCards, CardData } from '@/public/data/allData'; 
+import { googlemailCards, CardData } from '@/public/data/allData';
 
 export default function GLoutlook() {
     const [show, setShow] = useState(false);
