@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 interface CardProps {
-    imageSrc: string | StaticImageData;
+    imageSrc: string | StaticImageData ;
     title: string;
     description: string;
 }

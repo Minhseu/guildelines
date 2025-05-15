@@ -1,21 +1,33 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import { StaticImageData } from 'next/image';
 import Card from '../components/ui/card';
 import { mozillaCards, CardData } from '@/public/data/allData';
+import step1 from '@/public/images/mozilla/step1.png';
+import step2 from '@/public/images/mozilla/step2.png';
+import step3 from '@/public/images/mozilla/step3.png';
+import step4 from '@/public/images/mozilla/step4.png';
+import step5 from '@/public/images/mozilla/step5.png';
+import step6 from '@/public/images/mozilla/step6.png';
+import step7 from '@/public/images/mozilla/step7.png';
+import step8 from '@/public/images/mozilla/step8.png';
+
 
 export default function GLoutlook() {
     const [show, setShow] = useState(false);
-    const [currentStep, setCurrentStep] = useState(0);
+    const [currentStep, setCurrentStep] = useState<number>(0);
 
+    const steps: StaticImageData[] = [step1, step2, step3, step4, step5, step6, step7, step8];
     const cards: CardData[] = mozillaCards;
 
     useEffect(() => {
         setTimeout(() => setShow(true), 10);
     }, []);
 
+
     const handleNext = () => {
-        if (currentStep < cards.length - 1) {
+        if ((currentStep as number) < cards.length - 1) {
             setCurrentStep(prev => prev + 1);
         }
     };
@@ -46,7 +58,7 @@ export default function GLoutlook() {
                 }`}
             >
                 <Card
-                    imageSrc={cards[currentStep].imageSrc}
+                    imageSrc={steps[currentStep]}
                     title={cards[currentStep].title}
                     description={cards[currentStep].description}
                 />
